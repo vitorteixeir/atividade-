@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;
+    min-height: 10vh;
+  }
+  
+  header {
+    grid-column: 1 / -1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 15%;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  footer {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+  }
+  
+  /* Use 'max-width: 100%' para garantir que a imagem não ultrapasse o tamanho do contêiner pai */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Use 'vw' (viewport width) para definir o tamanho da fonte em relação à largura da tela */
+h1 {
+    font-size: 5vw;
+  }
+  
+  /* Defina um tamanho mínimo e máximo para evitar que a fonte fique muito pequena ou grande */
+  p {
+    font-size: 1.5vw;
+    min-inline-size: 10px;
+    max-inline-size: 9px;
+  }
+
+  
+  
